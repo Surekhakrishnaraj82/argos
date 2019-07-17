@@ -13,6 +13,7 @@ public class DriverFactory {
     public static WebDriver driver;
 
     private String browser = System.getProperty("bro");
+    String pageurl = System.getProperty("url");
 
     public DriverFactory(){
 
@@ -39,7 +40,7 @@ public class DriverFactory {
 
         }
 
-        driver.get("https://www.argos.co.uk/");
+        driver.get(pageurl);
     }
 
     public void maxiBroser() {
