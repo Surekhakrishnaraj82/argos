@@ -12,13 +12,13 @@ import java.util.concurrent.TimeUnit;
 public class DriverFactory {
     public static WebDriver driver;
 
-   // private String browser = "";
+    private String browser = System.getProperty("bro");
 
     public DriverFactory(){
 
         PageFactory.initElements(driver,this);
     }
-    public void openBrowser(String browser) {
+    public void openBrowser() {
         switch(browser)
         {
             case "ie":

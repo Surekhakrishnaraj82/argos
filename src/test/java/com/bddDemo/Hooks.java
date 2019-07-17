@@ -10,7 +10,7 @@ public class Hooks
 
     @Before
     public void setUp() {
-        driverFactory.openBrowser("chrome");
+        driverFactory.openBrowser(i);
         driverFactory.maxiBroser();
         driverFactory.applyImpWait();
     }
